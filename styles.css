@@ -3,12 +3,15 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333; /* Set default text color */
+    color: #333;
 }
 
 .container {
     width: 90%;
+    max-width: 1200px; /* Set maximum width to avoid excessive stretching on larger screens */
     margin: 0 auto;
+    padding: 0 20px; /* Add some padding to the sides for better readability */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 /* Header Styles */
@@ -18,21 +21,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow header content to wrap on smaller screens */
 }
+
 .logo img {
-    max-width: 150px;
-    vertical-align: middle;
+    max-width: 100%; /* Make the logo responsive */
+    height: auto;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove right margin from the last navigation item */
 }
 
 nav ul li a {
@@ -43,30 +52,36 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #15853c; /* Change the color on hover */
+    color: #15853c;
 }
 
+/* CSS for nav buttons */
 .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    list-style: none;
+    justify-content: center; /* Center the nav buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
 }
 
 .nav-button {
-    background-color: transparent; /* Transparent background */
-    color: #333; /* Text color */
-    border: 2px solid #333; /* Border color */
-    padding: 15px 30px; /* Adjust padding to make buttons bigger */
-    margin-right: 10px; /* Adjust spacing between buttons */
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin: 0.5em;
     cursor: pointer;
-    border-radius: 10px; /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    border-radius: 5px;
 }
 
 .nav-button:hover {
-    background-color: #333; /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
+    background-color: #333;
+    color: #fff;
 }
-
 
 /* Home Section Styles */
 .home-section {
@@ -106,72 +121,71 @@ ul {
 ul li {
     margin-bottom: 5px;
 }
+
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 
 .grid-item {
     width: 100%;
 }
+
 footer {
     background-color: #f0f0f0;
     padding: 20px 0;
     text-align: center;
 }
+
 /* History Section Styles */
 #history {
     background-color: #f0f0f0;
     padding: 50px 0;
     text-align: center;
 }
-.bordered-image1 {
-    border: 2px solid black; /* Change the border properties as needed */
-}
 
 .bordered-image {
-    border: 5px solid #2b8c30; /* Border color */
-    border-radius: 30px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    border: 5px solid #2b8c30;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .history-slider {
-    width: 100%; /* Ensure the slider takes the full width */
-    height: 100%; /* Adjust the height as needed */
+    width: 100%;
     overflow: hidden;
+    margin-top: 20px; /* Add some spacing */
 }
 
 .history-slider img {
-    width: calc(100% / 3); /* Display three images at a time */
+    width: calc(100% / 3);
     height: auto;
     float: left;
 }
 
-
 .history-images {
     display: flex;
-    justify-content: space-between; /* Adjust spacing between images */
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .history-item {
-    flex: 1; /* Equal width for each history item */
-    margin-right: 20px; /* Adjust spacing between images */
-    border: 2px solid #333; /* Border color */
-    border-radius: 10px; /* Rounded corners */
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width to fit three items per row */
+    margin-bottom: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
     overflow: hidden;
 }
 
 .history-item img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .history-label {
-    background-color: #333; /* Label background color */
-    color: #fff; /* Label text color */
-    padding: 10px; /* Adjust padding */
-    margin: 0; /* Remove default margin */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
     text-align: center;
 }
-
