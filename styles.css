@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Set default text color */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    max-width: 150px;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #15853c; /* Change the color on hover */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-button {
+    background-color: transparent; /* Transparent background */
+    color: #333; /* Text color */
+    border: 2px solid #333; /* Border color */
+    padding: 15px 30px; /* Adjust padding to make buttons bigger */
+    margin-right: 10px; /* Adjust spacing between buttons */
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.nav-button:hover {
+    background-color: #333; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+
+/* Home Section Styles */
+.home-section {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.home-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.5em;
+}
+
+/* Other sections styles */
+.container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    width: 100%;
+}
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+/* History Section Styles */
+#history {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+.bordered-image1 {
+    border: 2px solid black; /* Change the border properties as needed */
+}
+
+.bordered-image {
+    border: 5px solid #2b8c30; /* Border color */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+.history-slider {
+    width: 100%; /* Ensure the slider takes the full width */
+    height: 100%; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.history-slider img {
+    width: calc(100% / 3); /* Display three images at a time */
+    height: auto;
+    float: left;
+}
+
+
+.history-images {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between images */
+}
+
+.history-item {
+    flex: 1; /* Equal width for each history item */
+    margin-right: 20px; /* Adjust spacing between images */
+    border: 2px solid #333; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+}
+
+.history-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.history-label {
+    background-color: #333; /* Label background color */
+    color: #fff; /* Label text color */
+    padding: 10px; /* Adjust padding */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
