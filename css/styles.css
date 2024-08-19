@@ -80,50 +80,44 @@ nav {
     color: #fff;
 }
 
-/* Show the toggle button and hide the menu on mobile */
+/* Mobile Styles */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        background-color: #006600;
+        padding: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
     }
 
     .nav-toggle {
-        display: flex; /* Show toggle button on mobile */
-    }
-    .hero-content h1 {
-        font-size: 2rem;
+        display: flex;
     }
 
-    .features {
-        flex-direction: column;
+    .nav-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: 6px;
     }
 
-    .feature-box {
-        width: 100%;
-        margin-bottom: 1rem;
+    .nav-toggle.active .bar:nth-child(2) {
+        opacity: 0;
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    .footer {
-        padding: 1rem;
+    .nav-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg);
+        position: relative;
+        top: -6px;
     }
 }
 
-/* Style the navigation links */
-.nav-links a {
-    text-decoration: none;
-    padding: 15px;
-    color: #003366;
-    text-align: center;
-    display: block;
-}
-
-.nav-links a:hover {
-    background-color: #003366;
-    color: #fff;
-}
 .page-header {
     background-color: #f4f4f4;
     padding: 2rem;
@@ -396,4 +390,38 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .footer {
+        padding: 1rem;
+    }
 }
