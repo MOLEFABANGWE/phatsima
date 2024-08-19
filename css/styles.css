@@ -76,7 +76,7 @@ nav {
     margin-left: auto; /* Align it to the right */
 }
 
-.nav-toggle .bar {
+.nav-toggle span {
     width: 25px; /* Width of each bar */
     height: 3px; /* Height of each bar */
     background-color: #fff; /* Color of the bars */
