@@ -76,12 +76,11 @@ nav {
     margin-left: auto; /* Align it to the right */
 }
 
-/* Styling for each bar in the toggle button */
 .nav-toggle .bar {
     width: 25px; /* Width of each bar */
     height: 3px; /* Height of each bar */
     background-color: #fff; /* Color of the bars */
-    border-radius: 3px; /* Rounded corners for a softer look */
+    border-radius: 3px; /* Rounded corners */
 }
 
 /* Show the toggle button on mobile screens */
@@ -102,7 +101,6 @@ nav {
         display: flex; /* Show the navigation links when toggle button is clicked */
     }
 }
-
 /* Style the navigation links */
 .nav-links a {
     text-decoration: none;
