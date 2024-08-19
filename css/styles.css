@@ -77,10 +77,15 @@ nav {
 }
 
 .nav-toggle span {
-    width: 25px; /* Width of each bar */
-    height: 3px; /* Height of each bar */
+    width: 100%; /* Width of each bar */
+    height: 5px; /* Height of each bar */
     background-color: #fff; /* Color of the bars */
     border-radius: 3px; /* Rounded corners */
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: 3s ease;
 }
 
 /* Show the toggle button on mobile screens */
@@ -99,6 +104,23 @@ nav {
 
     .nav-links.show {
         display: flex; /* Show the navigation links when toggle button is clicked */
+    }
+
+
+    .nav-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: 6px;
+    }
+
+    .nav-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg);
+        position: relative;
+        top: -6px;
     }
 }
 /* Style the navigation links */
