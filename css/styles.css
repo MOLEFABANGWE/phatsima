@@ -89,6 +89,26 @@ nav {
     .nav-toggle {
         display: flex; /* Show toggle button on mobile */
     }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .footer {
+        padding: 1rem;
+    }
 }
 
 /* Style the navigation links */
