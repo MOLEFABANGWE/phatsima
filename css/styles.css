@@ -34,10 +34,26 @@ nav {
     width: auto;
 }
 
+/* Navigation Toggle (Hamburger Icon) */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle .bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 5px; /* Adjust spacing between buttons */
+    gap: 10px;
 }
 
 .nav-links li {
@@ -45,7 +61,6 @@ nav {
 }
 
 .nav-links a {
-    justify-items: center;
     background-color: #ffcc00;
     color: #003366;
     text-decoration: none;
@@ -54,17 +69,41 @@ nav {
     transition: background-color 0.3s ease;
 }
 
+/* Active Link */
+.nav-links a.active {
+    background-color: #fff;
+    color: #003366;
+}
+
 .nav-links a:hover {
     background-color: #003366;
     color: #fff;
 }
 
-/* Styling for the active link */
-.nav-links a.active {
-    background-color: #fff; /* White background for active link */
-    color: #003366; /* Text color for active link */
+/* Show the toggle button and hide the menu on mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex; /* Show toggle button on mobile */
+    }
 }
 
+/* Style the navigation links */
+.nav-links a {
+    text-decoration: none;
+    padding: 15px;
+    color: #003366;
+    text-align: center;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #003366;
+    color: #fff;
+}
 .page-header {
     background-color: #f4f4f4;
     padding: 2rem;
