@@ -77,7 +77,7 @@ nav {
 }
 
 .nav-toggle span {
-    width: 100%; /* Width of each bar */
+    width: 25px; /* Width of each bar */
     height: 5px; /* Height of each bar */
     background-color: #fff; /* Color of the bars */
     border-radius: 3px; /* Rounded corners */
