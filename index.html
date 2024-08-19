@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Name - Home</title>
+    <title>Phatsima Tutions - Home</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,10 +11,15 @@
         <nav>
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.jpg" alt="School Logo">
+                    <img src="images/logo.jpg" alt="Phatsima Tutions Logo">
                 </a>
             </div>
-            <ul class="nav-links">
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="academics.html">Academics</a></li>
@@ -24,22 +29,21 @@
             </ul>
         </nav>
     </header>
-    
-<section class="hero">
-    <video autoplay muted loop playsinline class="hero-video">
-        <source src="videos/hero-background.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="hero-content">
-        <h1>Welcome to School Name</h1>
-        <p>Empowering students to achieve excellence in every aspect of life.</p>
-        <a href="about.html" class="cta-button">Learn More</a>
-    </div>
-</section>
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="videos/hero-background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Welcome to Phatsima Tutions</h1>
+            <p>Home of Shining Stars</p>
+            <a href="about.html" class="cta-button">Learn More</a>
+        </div>
+    </section>
 
     <section class="about-preview">
         <h2>About Our School</h2>
-        <p>At School Name, we are dedicated to providing a nurturing environment that encourages growth, curiosity, and success. Our rich history and commitment to excellence have made us a leader in education.</p>
+        <p>At Phatsima Tutions, we are dedicated to providing a nurturing environment that encourages growth, curiosity, and success. Our rich history and commitment to excellence have made us a leader in education.</p>
         <a href="about.html" class="cta-button">Discover More</a>
     </section>
 
@@ -81,55 +85,65 @@
     <section class="testimonials">
         <h2>What Our Students Say</h2>
         <div class="testimonial">
-            <p>"Attending School Name has been an incredible experience. The teachers are supportive, and the community is like a second family."</p>
-            <p><strong>- Alex J., Senior</strong></p>
+            <p>"Attending Phatsima Tutions has been an incredible experience. The teachers are supportive, and the community is like a second family."</p>
+            <p><strong>- Kevin Thatayaone</strong></p>
         </div>
         <div class="testimonial">
-            <p>"The opportunities I've had at School Name have prepared me for college and beyond. I couldn't have asked for a better education."</p>
-            <p><strong>- Sarah M., Graduate</strong></p>
+            <p>"The opportunities I've had at Phatsima Tutions have prepared me for college and beyond. I couldn't have asked for a better education."</p>
+            <p><strong>- Ame Lebelwana</strong></p>
         </div>
     </section>
     
-        <!-- School Calendar Section -->
-        <section class="school-calendar">
-            <h2>School Calendar 2024</h2>
-            <ul>
-                <li>First Term: January 10 - March 30</li>
-                <li>Second Term: April 15 - June 30</li>
-                <li>Third Term: September 10 - November 30</li>
-            </ul>
-            <a href="calendar.html" class="cta-button">View Full Calendar</a>
-        </section>
-    
-        <!-- Gallery Section -->
-        <section class="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
-                <img src="images/gallery1.jpg" alt="School Event 1">
-                <img src="images/gallery2.jpg" alt="School Event 2">
-                <img src="images/gallery3.jpg" alt="School Event 3">
-                <img src="images/gallery4.jpg" alt="School Event 4">
-            </div>
-            <a href="gallery.html" class="cta-button">View More</a>
-        </section>
-    
-        <!-- Announcements Section -->
-        <section class="announcements">
-            <h2>Latest Announcements</h2>
-            <div class="announcement-item">
-                <h3>New School Year Begins</h3>
-                <p>We are excited to welcome students back for the new academic year. Please check the school calendar for important dates.</p>
-            </div>
-            <div class="announcement-item">
-                <h3>Open House Event</h3>
-                <p>Join us for our open house event on September 25th to learn more about our school and meet the faculty.</p>
-            </div>
-            <a href="announcements.html" class="cta-button">Read All Announcements</a>
-        </section>
-    <footer>
-        <p>&copy; 2024 School Name. All rights reserved.</p>
-    </footer>
+    <!-- School Calendar Section -->
+    <section class="school-calendar">
+        <h2>School Calendar 2024</h2>
+        <ul>
+            <li>First Term: January 10 - March 30</li>
+            <li>Second Term: April 15 - June 30</li>
+            <li>Third Term: September 10 - November 30</li>
+        </ul>
+        <a href="calendar.html" class="cta-button">View Full Calendar</a>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/gallery1.jpg" alt="School Event 1">
+            <img src="images/gallery2.jpg" alt="School Event 2">
+            <img src="images/gallery3.jpg" alt="School Event 3">
+            <img src="images/gallery4.jpg" alt="School Event 4">
+        </div>
+        <a href="gallery.html" class="cta-button">View More</a>
+    </section>
+
+    <!-- Announcements Section -->
+    <section class="announcements">
+        <h2>Latest Announcements</h2>
+        <div class="announcement-item">
+            <h3>New School Year Begins</h3>
+            <p>We are excited to welcome students back for the new academic year. Please check the school calendar for important dates.</p>
+        </div>
+        <div class="announcement-item">
+            <h3>Open House Event</h3>
+            <p>Join us for our open house event on September 25th to learn more about our school and meet the faculty.</p>
+        </div>
+        <a href="announcements.html" class="cta-button">Read All Announcements</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Phatsima Tutions. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.getElementById('navToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            navToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+                navToggle.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
