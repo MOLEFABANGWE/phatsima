@@ -83,7 +83,7 @@ nav {
 /* Show the toggle button and hide the menu on mobile */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: flex;
     }
 
     .nav-toggle {
