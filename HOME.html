@@ -1,280 +1,136 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Phatsima Tuitions Learning</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <!-- molf@24 -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Name - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo" align="right">
-                <img src="logo.jpg" alt="Phatsima Tuitions Learning Logo">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="School Logo">
+                </a>
             </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><button class="nav-button" data-target="home">Home</button></li>
-                    <li><button class="nav-button" data-target="about">About Us</button></li>
-                    <li><button class="nav-button" data-target="subjects">Services</button></li>
-                    <li><button class="nav-button" data-target="fees">Fees</button></li>
-                    <li><button class="nav-button" data-target="registration">Registration</button></li>
-                    <li><button class="nav-button" data-target="contact">Contact Us</button></li>
-                </ul>
-            </nav>
-        </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
     
+<section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/hero-background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <h1>Welcome to School Name</h1>
+        <p>Empowering students to achieve excellence in every aspect of life.</p>
+        <a href="about.html" class="cta-button">Learn More</a>
+    </div>
+</section>
 
-    <main >
-        <section id="home" class="home-section">
-            <div class="container">
-                <h1>Welcome to Phatsima Tuitions Learning</h1>
-                <p>Empowering Minds, Shaping Futures</p>
-            </div>
-        </section>
+    <section class="about-preview">
+        <h2>About Our School</h2>
+        <p>At School Name, we are dedicated to providing a nurturing environment that encourages growth, curiosity, and success. Our rich history and commitment to excellence have made us a leader in education.</p>
+        <a href="about.html" class="cta-button">Discover More</a>
+    </section>
 
-        <section id="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>Welcome to our premier primary and secondary homeschooling center of choice! Founded by a dedicated Motswana entrepreneur, we take pride in being a 100% youth-owned learning institute. Offering both part-time tuition and full-time homeschooling programs, we are fully registered and committed to providing top-notch education. As the main author of the highly recommended 90% revision workbooks, our commitment to excellence is evident. Moreover, our extensive partnerships with various schools and provision of home tuitions further enhance our holistic approach to education. Choose us for a transformative learning experience tailored to meet your child's unique needs.</p>
-            </div>
-        </section>
-        <section id="history">
-            <div class="container">
-                <h2>EVENTS</h2>
-                <div class="history-slider">
-                    <img src="history1.jpg" alt="History Image 1" class="bordered-image">
-                    <img src="history2.jpg" alt="History Image 2" class="bordered-image">
-                    <img src="history3.jpg" alt="History Image 3" class="bordered-image">
-                    <img src="history4.jpg" alt="History Image 1" class="bordered-image">
-                    <img src="history5.jpg" alt="History Image 2" class="bordered-image">
-                    <img src="history2.jpg" alt="History Image 3" class="bordered-image">
-                    <img src="history6.jpg" alt="History Image 1" class="bordered-image">
-                    <img src="history1.jpg" alt="History Image 2" class="bordered-image">
-                    <img src="history3.jpg" alt="History Image 3" class="bordered-image">
-                    <!-- Add more history images as needed -->
-                </div>
-            </div>
-        </section>
-        
-    
-
-        <section id="subjects" class="grid-item">
-            <div class="container">
-                <h2>Our Subjects</h2>
-                <p>Our faculty members are passionate educators who are dedicated to the success of our students. With their expertise and commitment to excellence, they inspire and motivate students to reach their full potential.</p>
-                <ul>
-                    <li>Mathematics</li>
-                    <li>Biology</li>
-                    <li>English Language Arts</li>
-                    <li>Computer Science</li>
-                    <li>Music</li>
-                    <li>Art</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="fees" class="grid-item">
-            <div class="container">
-                <h2>service fees</h2>
-            <p style="font-size: 16px;">We offer full-time and part-time tutorials for PSLE, JCE, BGCSE, and IGCSE examinations.</p>
-            <h3 style="font-size: 18px; margin-top: 20px;">Monthly Fees per subject:</h3>
-            <ul style="list-style-type: none; padding-left: 0; margin-top: 10px; margin-bottom: 20px;">
-                <li><strong>PSLE:</strong> P200.00 per month</li>
-                <li><strong>JCE:</strong> P200.00 per month</li>
-                <li><strong>BGCSE / IGCSE:</strong> P250.00 per month</li>
-            </ul>
-            <p style="font-size: 16px;"><strong>Full-time:</strong> P1500.00 per month</p>
-            <p style="font-size: 16px;"><strong>Registration Fee:</strong> P150.00 (one-time)</p>
-            </div>
-        </section>
-        
-
-        <section id="registration">
-            <div class="container">
-                <h2>Registration</h2>
-                <p>Ready to embark on your educational journey with us? Learn more about our registration process and start your registration today!</p>
-                <p>Requirements:</p>
-                <ul>
-                    <li>Completed registration form</li>
-                    <li>Transcripts from previous schools</li>
-                    <li>Citizenship documents copies</li>
-                </ul>
-                <p>Registration Deadline: June 1st</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container" align="center">
-                <h2>Contact Us</h2>
-                <p>Have questions or want to learn more about Phatsima Tuitions Learning? Contact us today!</p>
-                <p>Email: admin@phatsimatution.com</p>
-                <p><c>Phone</c></p>
-                <p>Gaborone Phase 2 ; +267 73 941 591</p>
-                <p>Gaborone Block 9 ; +267 78 371 513</p>
-                <p>Tlokweng Branch ; +267 78 371 512</p>
-               <p>Mochudi Branch ; +267 73 509 852</p>
-               <p>General Helpline ;+267 77 543 448</p>
-            </div>
-        </section>
-        
-        <!-- Include jQuery before slick.min.js -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script>
-           $(document).ready(function(){
-                $('.history-slider').slick({
-                    autoplay: true,
-                    autoplaySpeed: 3000, // Adjust speed as needed
-                    dots: false,
-                    arrows: false,
-                    infinite: true,
-                    slidesToShow: 3, // Display three images at a time
-                    slidesToScroll: 1, // Scroll one image at a time
-                    speed: 500,
-                    vertical: false // Ensure the slider slides horizontally
-                });
-            });
-
-            $(document).ready(function(){
-                // Add click event listener to nav buttons
-                $('.nav-button').click(function() {
-                    var target = $(this).data('target');
-                    $('html, body').animate({
-                        scrollTop: $('#' + target).offset().top
-                    }, 1000);
-                });
-            });
-
-
-
-        </script>
-    
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Phatsima Tuitions Learning. All rights reserved.</p>
+    <section class="features">
+        <div class="feature-box">
+            <img src="images/feature1.jpg" alt="Academic Excellence">
+            <h3>Academic Excellence</h3>
+            <p>We strive to provide an exceptional education that challenges and inspires our students to reach their full potential.</p>
         </div>
+        <div class="feature-box">
+            <img src="images/feature2.jpg" alt="Innovative Programs">
+            <h3>Innovative Programs</h3>
+            <p>Our cutting-edge programs are designed to engage students in creative and critical thinking across all subjects.</p>
+        </div>
+        <div class="feature-box">
+            <img src="images/feature3.jpg" alt="Community Engagement">
+            <h3>Community Engagement</h3>
+            <p>We believe in the power of community and work closely with local organizations to foster a sense of belonging and responsibility.</p>
+        </div>
+    </section>
+
+    <section class="news-events">
+        <h2>Latest News & Events</h2>
+        <div class="event">
+            <h3>Back to School Night</h3>
+            <p>Join us on September 10th for a night of fun and learning as we kick off the new school year!</p>
+        </div>
+        <div class="event">
+            <h3>Science Fair 2024</h3>
+            <p>Our annual Science Fair will take place on October 5th. Students will showcase their innovative projects and experiments.</p>
+        </div>
+        <div class="event">
+            <h3>Winter Concert</h3>
+            <p>Celebrate the holiday season with us at our Winter Concert on December 12th, featuring performances by our talented students.</p>
+        </div>
+        <a href="events.html" class="cta-button">View All Events</a>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial">
+            <p>"Attending School Name has been an incredible experience. The teachers are supportive, and the community is like a second family."</p>
+            <p><strong>- Alex J., Senior</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"The opportunities I've had at School Name have prepared me for college and beyond. I couldn't have asked for a better education."</p>
+            <p><strong>- Sarah M., Graduate</strong></p>
+        </div>
+    </section>
+    
+        <!-- School Calendar Section -->
+        <section class="school-calendar">
+            <h2>School Calendar 2024</h2>
+            <ul>
+                <li>First Term: January 10 - March 30</li>
+                <li>Second Term: April 15 - June 30</li>
+                <li>Third Term: September 10 - November 30</li>
+            </ul>
+            <a href="calendar.html" class="cta-button">View Full Calendar</a>
+        </section>
+    
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/gallery1.jpg" alt="School Event 1">
+                <img src="images/gallery2.jpg" alt="School Event 2">
+                <img src="images/gallery3.jpg" alt="School Event 3">
+                <img src="images/gallery4.jpg" alt="School Event 4">
+            </div>
+            <a href="gallery.html" class="cta-button">View More</a>
+        </section>
+    
+        <!-- Announcements Section -->
+        <section class="announcements">
+            <h2>Latest Announcements</h2>
+            <div class="announcement-item">
+                <h3>New School Year Begins</h3>
+                <p>We are excited to welcome students back for the new academic year. Please check the school calendar for important dates.</p>
+            </div>
+            <div class="announcement-item">
+                <h3>Open House Event</h3>
+                <p>Join us for our open house event on September 25th to learn more about our school and meet the faculty.</p>
+            </div>
+            <a href="announcements.html" class="cta-button">Read All Announcements</a>
+        </section>
+    <footer>
+        <p>&copy; 2024 School Name. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <!-- written by molf -->
