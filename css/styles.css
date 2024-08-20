@@ -108,7 +108,7 @@ nav {
 
 
     .nav-toggle.active .bar:nth-child(1) {
-        transform: rotate(-45deg);
+        transform: rotate(-90deg);
         position: relative;
         top: 6px;
     }
@@ -118,7 +118,7 @@ nav {
     }
 
     .nav-toggle.active .bar:nth-child(3) {
-        transform: rotate(45deg);
+        transform: rotate(90deg);
         position: relative;
         top: -6px;
     }
