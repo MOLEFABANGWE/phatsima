@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Name - Academics</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="Phatsima Tutions Logo">
+                </a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html" >About Us</a></li>
+                <li><a href="academics.html" class="active">Academics</a></li>
+                <li><a href="admissions.html" >Admissions</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Academics</h1>
+    </section>
+    
+    <section class="content">
+        <h2>Our Programs</h2>
+        <p>Explore our wide range of academic programs and courses.</p>
+
+        <h2>Departments</h2>
+        <ul>
+            <li>Science</li>
+            <li>Mathematics</li>
+            <li>Humanities</li>
+            <li>Languages</li>
+            <li>Physical Education</li>
+        </ul>
+
+        <h2>Faculty</h2>
+        <p>Our dedicated team of educators is here to guide students to success.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 School Name. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.getElementById('navToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            navToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+                navToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
